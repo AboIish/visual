@@ -2946,10 +2946,21 @@ g:Button(
 )
 _:Button(
     "Headless",
-    function()
-        getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
-        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
-        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+    local L_393_ = game.Players.LocalPlayer.Character
+    local L_394_ = L_393_:WaitForChild("Head")
+    local L_395_ = L_394_:WaitForChild("face")
+    L_395_.Transparency = 1 --Texture = "rbxassetid://209712379"
+    L_394_.Transparency = 1
+    local L_396_ = game.Players.LocalPlayer.Character
+    local L_397_ = game.Players.LocalPlayer.Character
+    local L_398_ = L_396_.Head
+    local L_399_ = L_398_.face
+    local L_400_ = L_397_.RightFoot
+    local L_401_ = L_397_.RightLowerLeg
+    local L_402_ = L_397_.RightUpperLeg
+    local L_403_ = L_397_.LeftFoot
+    local L_404_ = L_397_.LeftLowerLeg
+    local L_405_ = L_397_.LeftUpperLeg
     end
 )
 b:Button(
