@@ -2946,15 +2946,14 @@ g:Button(
 )
 _:Button(
     "Headless",
-    game.Players.LocalPlayer.Character.Head.Transparency = 1
-    game.Players.LocalPlayer.Character.Head.Transparency = 1
-    for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
-    if (v:IsA("Decal")) then
-    v.Transparency = 1
+    function()
+        getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
     end
 )
 b:Button(
-    "Right Korblox(da hood one)",
+    "Right Korblox for da hood one",
     function()
         local _ = game.Players.LocalPlayer
         local _ = _.Character
