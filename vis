@@ -1,5 +1,5 @@
 local _ = loadstring(game:HttpGet("https://raw.githubusercontent.com/AustraIia/visual/main/gui"))()
-local b = _:New({Name = "                                      ---", FolderToSave = "SolarisLibStuff"})
+local b = _:New({Name = "Family", FolderToSave = "SolarisLibStuff"})
 local _ = b:Tab("Valkyrie")
 local h = _:Section("Valkyrie")
 local _ = b:Tab("Fiery Horns")
@@ -25,15 +25,6 @@ local b = b:Tab("Headless / Korblox")
 local _ = b:Section("Headless")
 local b = b:Section("Korblox")
 
-a:Button(
-    "Discord Server",
-    function()
-        local _ = game:GetService("StarterGui")
-        _:SetCore("SendNotification", {Title = "Discord", Text = "Copied to your clipboard", Duration = 15})
-        wait(0.5)
-        setclipboard("discord.gg/ | discord.gg/")
-    end
-)
 h:Button(
     "Blackvalk",
     function()
