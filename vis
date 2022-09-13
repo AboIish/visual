@@ -3305,4 +3305,3 @@ game:service "Players".LocalPlayer.Idled:connect(
         c.Text = "Status : Active"
     end
 )
-print("This script has an FPS & ANTI-AFK built into it.")
