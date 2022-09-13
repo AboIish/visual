@@ -161,6 +161,65 @@ h:Button(
     end
 )
 h:Button(
+    "Red Valkyrie",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function _(_, a, c, b, d, e)
+            local f = Instance.new("Weld")
+            f.Name = _
+            f.Part0 = c
+            f.Part1 = b
+            f.C0 = d
+            f.C1 = e
+            f.Parent = a
+            return f
+        end
+        local function b(_, a)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == a then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = b(_, a)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(c, e)
+            e.Parent = c
+            local d = e:FindFirstChild("Handle")
+            if d then
+                local a = d:FindFirstChildOfClass("Attachment")
+                if a then
+                    local _ = b(c, a.Name)
+                    if _ then
+                        l(_, a)
+                    end
+                else
+                    local c = c:FindFirstChild("Head")
+                    if c then
+                        local a = CFrame.new(0, 0.5, 0)
+                        local b = e.AttachmentPoint
+                        _("HeadWeld", c, c, d, a, b)
+                    end
+                end
+            end
+        end
+        local _ = 2274774123
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+    end
+)
+h:Button(
     "Violet Valkyrie",
     function()
         function l(a, _)
