@@ -3004,6 +3004,26 @@ f:Button(
     end
 )
 f:Button(
+    "Epic Vampire Face",
+    function()
+        local _ = game:GetService("Players").LocalPlayer
+        local _ = _.Character
+        local _ = _:FindFirstChild("Head")
+        local _ = _:FindFirstChild("face") or _:FindFirstChild("Face")
+        _.Texture = "rbxassetid://181651981"
+    end
+)
+f:Button(
+    "Epic Face",
+    function()
+        local _ = game:GetService("Players").LocalPlayer
+        local _ = _.Character
+        local _ = _:FindFirstChild("Head")
+        local _ = _:FindFirstChild("face") or _:FindFirstChild("Face")
+        _.Texture = "rbxassetid://42070576"
+    end
+)
+f:Button(
     "Trouble Maker",
     function()
         local _ = game:GetService("Players").LocalPlayer
