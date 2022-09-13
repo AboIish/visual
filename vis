@@ -3010,7 +3010,7 @@ f:Button(
         local _ = _.Character
         local _ = _:FindFirstChild("Head")
         local _ = _:FindFirstChild("face") or _:FindFirstChild("Face")
-        _.Texture = "rbxassetid://181651981"
+        _.Texture = "rbxassetid://181661839"
     end
 )
 f:Button(
@@ -3020,7 +3020,7 @@ f:Button(
         local _ = _.Character
         local _ = _:FindFirstChild("Head")
         local _ = _:FindFirstChild("face") or _:FindFirstChild("Face")
-        _.Texture = "rbxassetid://42070576"
+        _.Texture = "rbxassetid://42070872"
     end
 )
 f:Button(
