@@ -183,7 +183,8 @@ a:Button(
 )
 a:Button(
     "Korblox 4 Robot",
-    function()
+        local _ = game.Players.LocalPlayer
+        local _ = _.Character
         _.RightLowerLeg.MeshId = "902942093"
         _.RightLowerLeg.Transparency = "1"
         _.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
