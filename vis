@@ -1,7 +1,8 @@
 local _ = loadstring(game:HttpGet("https://raw.githubusercontent.com/AustraIia/visual/main/gui"))()
 local b = _:New({Name = "Family", FolderToSave = "SolarisLibStuff"})
 local _ = b:Tab("Presets")
-local a = _:Section("Preset Test #1")
+local a = _:Section("Jrocks Section")
+local p = _:Section("Racists Section")
 local _ = b:Tab("Valkyrie")
 local h = _:Section("Valkyrie")
 local _ = b:Tab("Fiery Horns")
@@ -86,6 +87,65 @@ a:Button(
     end
 ) 
 a:Button(
+    "Black Iron Horns",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function b(e, d, b, c, a, _)
+            local f = Instance.new("Weld")
+            f.Name = e
+            f.Part0 = b
+            f.Part1 = c
+            f.C0 = a
+            f.C1 = _
+            f.Parent = d
+            return f
+        end
+        local function c(_, a)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == a then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = c(_, a)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(_, e)
+            e.Parent = _
+            local d = e:FindFirstChild("Handle")
+            if d then
+                local a = d:FindFirstChildOfClass("Attachment")
+                if a then
+                    local _ = c(_, a.Name)
+                    if _ then
+                        l(_, a)
+                    end
+                else
+                    local c = _:FindFirstChild("Head")
+                    if c then
+                        local _ = CFrame.new(0, 0.5, 0)
+                        local a = e.AttachmentPoint
+                        b("HeadWeld", c, c, d, _, a)
+                    end
+                end
+            end
+        end
+        local _ = 628771505
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+    end
+) 
+a:Button(
     "Da Hood Combo",
     function()
         local L_393_ = game.Players.LocalPlayer.Character
@@ -109,6 +169,65 @@ a:Button(
         L_402_.TextureID = "http://roblox.com/asset/?id=902843398"
         L_400_.Transparency = 1
         L_401_.Transparency = 1
+    end
+)
+p:Button(
+    "Dominus Messor",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function b(e, c, d, b, _, a)
+            local f = Instance.new("Weld")
+            f.Name = e
+            f.Part0 = d
+            f.Part1 = b
+            f.C0 = _
+            f.C1 = a
+            f.Parent = c
+            return f
+        end
+        local function a(_, b)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == b then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = a(_, b)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(_, e)
+            e.Parent = _
+            local c = e:FindFirstChild("Handle")
+            if c then
+                local d = c:FindFirstChildOfClass("Attachment")
+                if d then
+                    local _ = a(_, d.Name)
+                    if _ then
+                        l(_, d)
+                    end
+                else
+                    local d = _:FindFirstChild("Head")
+                    if d then
+                        local _ = CFrame.new(0, 0.5, 0)
+                        local a = e.AttachmentPoint
+                        b("HeadWeld", d, d, c, _, a)
+                    end
+                end
+            end
+        end
+        local _ = 64444871
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
     end
 )
 h:Button(
