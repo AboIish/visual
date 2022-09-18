@@ -172,7 +172,7 @@ a:Button(
     end
 )
 a:Button(
-    "Da Hood Combo",
+    "Da Hood Combo for Robot",
     function()
         getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
         getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
