@@ -171,6 +171,22 @@ a:Button(
         L_401_.Transparency = 1
     end
 )
+a:Button(
+    "Da Hood Combo",
+    function()
+        getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+        local _ = game.Players.LocalPlayer
+        local _ = _.Character
+        _.RightLowerLeg.MeshId = "902942093"
+        _.RightLowerLeg.Transparency = "1"
+        _.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+        _.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+        _.RightFoot.MeshId = "902942089"
+        _.RightFoot.Transparency = "1"
+    end
+)
 u:Button(
     "Fiery Horns of the Netherworld",
     function()
