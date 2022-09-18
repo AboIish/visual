@@ -174,11 +174,11 @@ a:Button(
 a:Button(
     "Combo for Robot Head",
     function()
-        getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
-        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
-        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
-        local _ = game.Players.LocalPlayer
-        local _ = _.Character
+	game.Players.LocalPlayer.Character.Head.Transparency = 1
+	game.Players.LocalPlayer.Character.Head.Transparency = 1
+	for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+		if (v:IsA("Decal")) then
+			v.Transparency = 1
         _.RightLowerLeg.MeshId = "902942093"
         _.RightLowerLeg.Transparency = "1"
         _.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
@@ -188,7 +188,7 @@ a:Button(
     end
 )
 p:Button(
-    "Dominus Messor",
+    "Fiery Horns of the Netherworld",
     function()
         function l(a, _)
             local b = Instance.new("Weld")
@@ -199,14 +199,73 @@ p:Button(
             b.Parent = a.Parent
             return b
         end
-        local function b(e, c, d, b, _, a)
+        local function b(c, a, e, d, b, _)
             local f = Instance.new("Weld")
-            f.Name = e
-            f.Part0 = d
-            f.Part1 = b
-            f.C0 = _
-            f.C1 = a
-            f.Parent = c
+            f.Name = c
+            f.Part0 = e
+            f.Part1 = d
+            f.C0 = b
+            f.C1 = _
+            f.Parent = a
+            return f
+        end
+        local function c(_, a)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == a then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = c(_, a)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(e, _)
+            _.Parent = e
+            local d = _:FindFirstChild("Handle")
+            if d then
+                local a = d:FindFirstChildOfClass("Attachment")
+                if a then
+                    local _ = c(e, a.Name)
+                    if _ then
+                        l(_, a)
+                    end
+                else
+                    local c = e:FindFirstChild("Head")
+                    if c then
+                        local a = CFrame.new(0, 0.5, 0)
+                        local _ = _.AttachmentPoint
+                        b("HeadWeld", c, c, d, a, _)
+                    end
+                end
+            end
+        end
+        local _ = 215718515
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+    end
+)
+p:Button(
+    "Frozen Horns of the Frigid Planes",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function _(_, a, b, d, c, e)
+            local f = Instance.new("Weld")
+            f.Name = _
+            f.Part0 = b
+            f.Part1 = d
+            f.C0 = c
+            f.C1 = e
+            f.Parent = a
             return f
         end
         local function a(_, b)
@@ -221,27 +280,27 @@ p:Button(
                 end
             end
         end
-        function k(_, e)
-            e.Parent = _
-            local c = e:FindFirstChild("Handle")
-            if c then
-                local d = c:FindFirstChildOfClass("Attachment")
-                if d then
-                    local _ = a(_, d.Name)
+        function k(e, c)
+            c.Parent = e
+            local d = c:FindFirstChild("Handle")
+            if d then
+                local b = d:FindFirstChildOfClass("Attachment")
+                if b then
+                    local _ = a(e, b.Name)
                     if _ then
-                        l(_, d)
+                        l(_, b)
                     end
                 else
-                    local d = _:FindFirstChild("Head")
-                    if d then
-                        local _ = CFrame.new(0, 0.5, 0)
-                        local a = e.AttachmentPoint
-                        b("HeadWeld", d, d, c, _, a)
+                    local e = e:FindFirstChild("Head")
+                    if e then
+                        local b = CFrame.new(0, 0.5, 0)
+                        local a = c.AttachmentPoint
+                        _("HeadWeld", e, e, d, b, a)
                     end
                 end
             end
         end
-        local _ = 64444871
+        local _ = 74891470
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
     end
