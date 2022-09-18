@@ -27,8 +27,6 @@ local b = b:Tab("Headless / Korblox")
 local _ = b:Section("Headless")
 local b = b:Section("Korblox")
 a:Button(
-    "Preset Test", 
-a:Button(
     "Red Iron Horns",
     function()
         function l(a, _)
