@@ -2,7 +2,7 @@ local _ = loadstring(game:HttpGet("https://raw.githubusercontent.com/AustraIia/v
 local b = _:New({Name = "Family", FolderToSave = "SolarisLibStuff"})
 local _ = b:Tab("Presets")
 local a = _:Section("Jrocks Section")
-local p = _:Section("Racists Section")
+local u = _:Section("Racists Section")
 local _ = b:Tab("Valkyrie")
 local h = _:Section("Valkyrie")
 local _ = b:Tab("Fiery Horns")
@@ -171,22 +171,7 @@ a:Button(
         L_401_.Transparency = 1
     end
 )
-a:Button(
-    "Combo for Robot Head",
-    function()
-        _.RightLowerLeg.MeshId = "902942093"
-        _.RightLowerLeg.Transparency = "1"
-        _.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-        _.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-        _.RightFoot.MeshId = "902942089"
-        _.RightFoot.Transparency = "1"
-	local L_393_ = game.Players.LocalPlayer.Character
-        local L_394_ = L_393_:WaitForChild("Head")
-        local L_395_ = L_394_:WaitForChild("face")
-        L_395_.Transparency = 1 --Texture = "rbxassetid://209712379"
-        L_394_.Transparency = 1
-)
-p:Button(
+u:Button(
     "Fiery Horns of the Netherworld",
     function()
         function l(a, _)
@@ -245,7 +230,7 @@ p:Button(
         k(game.Players.LocalPlayer.Character, _)
     end
 )
-p:Button(
+u:Button(
     "Frozen Horns of the Frigid Planes",
     function()
         function l(a, _)
