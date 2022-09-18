@@ -174,15 +174,17 @@ a:Button(
 a:Button(
     "Combo for Robot Head",
     function()
-	game.Players.LocalPlayer.Character.Head.Transparency = 1
-	game.Players.LocalPlayer.Character.Head.Transparency = 1
         _.RightLowerLeg.MeshId = "902942093"
         _.RightLowerLeg.Transparency = "1"
         _.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
         _.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
         _.RightFoot.MeshId = "902942089"
         _.RightFoot.Transparency = "1"
-    end
+	local L_393_ = game.Players.LocalPlayer.Character
+        local L_394_ = L_393_:WaitForChild("Head")
+        local L_395_ = L_394_:WaitForChild("face")
+        L_395_.Transparency = 1 --Texture = "rbxassetid://209712379"
+        L_394_.Transparency = 1
 )
 p:Button(
     "Fiery Horns of the Netherworld",
