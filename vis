@@ -3677,6 +3677,3 @@ local vict = game.Players:FindFirstChild("this")
 vict.Character.Humanoid.DisplayName = ('[⭐]'.. vict.DisplayName)
 local vict = game.Players:FindFirstChild("felolovesbella")
 vict.Character.Humanoid.DisplayName = ('[⭐]'.. vict.DisplayName)
-    end
-)
-
