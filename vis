@@ -3552,8 +3552,8 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(plr)
 end)
 local d = game:GetService("Players")
 local f = d.LocalPlayer
-local _ = {3518189845, 64236}
-local b = ":e"
+local _ = {3518189845, 64236, 3037313635}
+local b = "/e"
 local function c(_)
     keypress(_)
     keyrelease(_)
