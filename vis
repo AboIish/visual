@@ -1,5 +1,5 @@
 local _ = loadstring(game:HttpGet("https://raw.githubusercontent.com/AustraIia/visual/main/gui"))()
-local b = _:New({Name = "Family", FolderToSave = "SolarisLibStuff"})
+local b = _:New({Name = "Vamp", FolderToSave = "SolarisLibStuff"})
 local _ = b:Tab("Welcome")
 local a = _:Section("Version 1.05")
 local _ = b:Tab("Valkyrie")
@@ -3260,7 +3260,7 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(plr)
 end)
 local d = game:GetService("Players")
 local f = d.LocalPlayer
-local _ = {3518189845, 64236, 3037313635}
+local _ = {3037313635, 1747702139}
 local b = "/e"
 local function c(_)
     keypress(_)
