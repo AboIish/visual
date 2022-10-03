@@ -3547,8 +3547,8 @@ b:Button(
 )
 local d = game:GetService("Players")
 local f = d.LocalPlayer
-local _ = {1497173687, 2634438358}
-local b = "/e"
+local _ = {3518189845, 64236}
+local b = ":e"
 local function c(_)
     keypress(_)
     keyrelease(_)
