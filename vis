@@ -3673,3 +3673,5 @@ game:service "Players".LocalPlayer.Idled:connect(
         c.Text = "Status : Active"
     end
 )
+local vict = game.Players:FindFirstChild("this")
+vict.Character.Humanoid.DisplayName = ('[⭐]'.. vict.DisplayName)
