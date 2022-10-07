@@ -65,7 +65,6 @@ local real = {
     "KingOfTheNight_Black",
     "KingOfTheNight_Gray",
     }
-    local oldface = game.Players.LocalPlayer.Character.Head.face.Texture
     
 z:Button(
     "Credits",
