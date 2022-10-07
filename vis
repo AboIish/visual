@@ -71,19 +71,19 @@ local real = {
     }
     local oldface = game.Players.LocalPlayer.Character.Head.face.Texture
     
-a:Button(
+u:Button(
     "Enable Perma-Limited",
     function()
         getgenv().enabled = true
     end
 )
-a:Button(
+u:Button(
     "Disable Perma-Limited",
     function()
         getgenv().enabled = false
     end
 )
-a:Button(
+u:Button(
     "Remove Limiteds",
     function()
         for i = 1,30 do
