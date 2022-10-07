@@ -2,6 +2,7 @@ local _ = loadstring(game:HttpGet("https://raw.githubusercontent.com/AustraIia/v
 local b = _:New({Name = "Vamp", FolderToSave = "SolarisLibStuff"})
 local _ = b:Tab("Welcome")
 local a = _:Section("Version 1.1")
+local _ = b:Tab("Features")
 local j = _:Section("Cool")
 local _ = b:Tab("Valkyrie")
 local h = _:Section("Valkyrie")
