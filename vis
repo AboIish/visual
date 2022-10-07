@@ -90,7 +90,7 @@ j:Button(
     end
 end
 )
-h:Button(
+h:Button(h:Button(
     "Blackvalk",
     function()
         function l(a, _)
@@ -871,6 +871,66 @@ end)
     end
 )
 x:Button(
+    "Black Iron King of the Night",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function b(e, d, b, c, a, _)
+            local f = Instance.new("Weld")
+            f.Name = e
+            f.Part0 = b
+            f.Part1 = c
+            f.C0 = a
+            f.C1 = _
+            f.Parent = d
+            return f
+        end
+        local function c(_, a)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == a then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = c(_, a)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(_, e)
+            e.Parent = _
+            local d = e:FindFirstChild("Handle")
+            if d then
+                local a = d:FindFirstChildOfClass("Attachment")
+                if a then
+                    local _ = c(_, a.Name)
+                    if _ then
+                        l(_, a)
+                    end
+                else
+                    local c = _:FindFirstChild("Head")
+                    if c then
+                        local _ = CFrame.new(0, 0.5, 0)
+                        local a = e.AttachmentPoint
+                        b("HeadWeld", c, c, d, _, a)
+                    end
+                end
+            end
+        end
+        local _ = 439946249
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end)
+x:Button(
     "Gold King of the Night",
     function()
         function l(a, _)
@@ -995,8 +1055,6 @@ x:Button(
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
 end
-end)
-    end
 ) 
 x:Button(
     "Blue Queen of the Night",
@@ -1057,8 +1115,6 @@ x:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 x:Button(
@@ -1120,8 +1176,6 @@ x:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 x:Button(
@@ -1183,8 +1237,6 @@ x:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 o:Button(
@@ -1246,8 +1298,6 @@ o:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 o:Button(
@@ -1309,8 +1359,6 @@ o:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 q:Button(
@@ -1372,8 +1420,6 @@ q:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 q:Button(
@@ -1435,8 +1481,6 @@ q:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 q:Button(
@@ -1498,8 +1542,6 @@ q:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 q:Button(
@@ -1561,8 +1603,6 @@ q:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 q:Button(
@@ -1624,8 +1664,6 @@ q:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 i:Button(
@@ -1687,8 +1725,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -1750,8 +1786,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -1813,8 +1847,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -1876,8 +1908,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -1939,8 +1969,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -2002,8 +2030,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -2065,8 +2091,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -2128,8 +2152,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -2191,8 +2213,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 i:Button(
@@ -2254,8 +2274,6 @@ i:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2317,8 +2335,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2380,8 +2396,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2443,8 +2457,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2506,8 +2518,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2569,8 +2579,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2632,8 +2640,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2695,8 +2701,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2758,8 +2762,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2821,8 +2823,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2884,8 +2884,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -2947,8 +2945,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 j:Button(
@@ -3010,8 +3006,6 @@ j:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 )
 t:Button(
@@ -3073,8 +3067,6 @@ t:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 t:Button(
@@ -3136,8 +3128,6 @@ t:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 t:Button(
@@ -3199,8 +3189,6 @@ t:Button(
         k(game.Players.LocalPlayer.Character, _)
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
-end
-end)
     end
 ) 
 d:Button(
