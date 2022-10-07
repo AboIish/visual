@@ -1,7 +1,8 @@
 local _ = loadstring(game:HttpGet("https://raw.githubusercontent.com/AustraIia/visual/main/gui"))()
 local b = _:New({Name = "Vamp", FolderToSave = "SolarisLibStuff"})
 local _ = b:Tab("Welcome")
-local a = _:Section("Version 1.05")
+local a = _:Section("Version 1.1")
+local u = _:Section("Cool")
 local _ = b:Tab("Valkyrie")
 local h = _:Section("Valkyrie")
 local _ = b:Tab("Fiery Horns")
@@ -30,8 +31,72 @@ a:Button(
     "Credits",
     function()
         local _ = game:GetService("StarterGui")
-        _:SetCore("SendNotification", {Title = "Credits", Text = "Dev: Dreams Biggest Fan 8369, Inspiration Ideas: Jrock", Duration = 15})
+        _:SetCore("SendNotification", {Title = "Credits", Text = "Dev: X, Inspiration Ideas: Jrock", Duration = 15})
     end
+)
+local real = {
+    "ValkyrieHelm",
+    "Valiant Valkyrie of Testing",
+    "FlamingHorns",
+    "HoodedAssassin",
+    "Gift13",
+    "DominusV2",
+    "GoldenDominus",
+    "MeshPrtAccessory",
+    "MidnightDominus",
+    "DominusInfernus",
+    "SkyBlueSparkleTimeFedora",
+    "SparkleTimeFedora",
+    "TealSparkleTimeFedora",
+    "GreenSparkletimeFedora",
+    "BlueSparkleTimeFedora",
+    "RedSparkletimeFedora",
+    "PurpleSparkleTimeFedora",
+    "PinkSparkleTimeFedora",
+    "OrangeSparkletimeFedora",
+    "BlackSparkleTimeFedora",
+    "KingOfTheNight_Silver",
+    "KingOfTheNight_Black",
+    "KingOfTheNight_Gold",
+    "KingOfTheNight_Adurite",
+    "QueenoftheNight_Blue",
+    "QueenoftheNight_Green",
+    "QueenoftheNight_Blue",
+    "Headphones",
+    "BlueWCHeadphones",
+    "BlueWCHeadphones",
+    "PurpleWCHeadphones",
+    "BlackIronHorns",
+    "Headphones",
+    }
+    local oldface = game.Players.LocalPlayer.Character.Head.face.Texture
+    
+a:Button(
+    "Enable Perma-Limited",
+    function()
+        getgenv().enabled = true
+    end
+)
+a:Button(
+    "Disable Perma-Limited",
+    function()
+        getgenv().enabled = false
+    end
+)
+a:Button(
+    "Remove Limiteds",
+    function()
+        for i = 1,30 do
+        for i,v in pairs(real) do
+            if game.Players.LocalPlayer.Character:FindFirstChild(v) then
+                game.Players.LocalPlayer.Character:FindFirstChild(v):Destroy()
+            end
+        end
+        if game.Players.LocalPlayer.Character.Head.face.Texture ~= oldface then
+            game.Players.LocalPlayer.Character.Head.face.Texture = oldface
+        end
+    end
+end
 )
 h:Button(
     "Blackvalk",
@@ -90,6 +155,12 @@ h:Button(
         local _ = 124730194
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 h:Button(
@@ -149,6 +220,12 @@ h:Button(
         local _ = 2830437685
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 h:Button(
@@ -208,6 +285,12 @@ h:Button(
         local _ = 2274774123
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 h:Button(
@@ -267,6 +350,12 @@ h:Button(
         local _ = 1402432199
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 h:Button(
@@ -326,6 +415,12 @@ h:Button(
         local _ = 7781687598
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 h:Button(
@@ -385,6 +480,12 @@ h:Button(
         local _ = 1365767
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 h:Button(
@@ -444,6 +545,12 @@ h:Button(
         local _ = 1180433861
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 h:Button(
@@ -503,6 +610,12 @@ h:Button(
         local _ = 4390891467
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 c:Button(
@@ -562,6 +675,12 @@ c:Button(
         local _ = 215718515
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 c:Button(
@@ -621,6 +740,12 @@ c:Button(
         local _ = 74891470
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 c:Button(
@@ -680,6 +805,12 @@ c:Button(
         local _ = 1744060292
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 x:Button(
@@ -739,6 +870,10 @@ x:Button(
         local _ = 439945661
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 x:Button(
@@ -798,6 +933,10 @@ x:Button(
         local _ = 439946249
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 x:Button(
@@ -857,6 +996,10 @@ x:Button(
         local _ = 439945864
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 x:Button(
@@ -916,6 +1059,10 @@ x:Button(
         local _ = 439946101
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 x:Button(
@@ -975,6 +1122,10 @@ x:Button(
         local _ = 553970606
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 x:Button(
@@ -1034,6 +1185,10 @@ x:Button(
         local _ = 553970961
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 x:Button(
@@ -1093,6 +1248,10 @@ x:Button(
         local _ = 501966049
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 o:Button(
@@ -1152,6 +1311,10 @@ o:Button(
         local _ = 1235488
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 o:Button(
@@ -1211,6 +1374,10 @@ o:Button(
         local _ = 1743903423
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 q:Button(
@@ -1270,6 +1437,10 @@ q:Button(
         local _ = 323417812
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 q:Button(
@@ -1329,6 +1500,10 @@ q:Button(
         local _ = 2566024668
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 q:Button(
@@ -1388,6 +1563,10 @@ q:Button(
         local _ = 878908562
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 q:Button(
@@ -1447,6 +1626,10 @@ q:Button(
         local _ = 553858732
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 q:Button(
@@ -1506,6 +1689,10 @@ q:Button(
         local _ = 1191152570
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 i:Button(
@@ -1565,6 +1752,10 @@ i:Button(
         local _ = 96103379
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -1624,6 +1815,10 @@ i:Button(
         local _ = 250395631
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -1683,6 +1878,10 @@ i:Button(
         local _ = 527365852
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -1742,6 +1941,10 @@ i:Button(
         local _ = 64444871
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -1801,6 +2004,10 @@ i:Button(
         local _ = 31101391
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -1860,6 +2067,10 @@ i:Button(
         local _ = 48545806
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -1919,6 +2130,10 @@ i:Button(
         local _ = 4255053867
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -1978,6 +2193,10 @@ i:Button(
         local _ = 21070012
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -2037,6 +2256,10 @@ i:Button(
         local _ = 138932314
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 i:Button(
@@ -2096,6 +2319,10 @@ i:Button(
         local _ = 162067148
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2155,6 +2382,10 @@ j:Button(
         local _ = 493476042
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2214,6 +2445,10 @@ j:Button(
         local _ = 1285307
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2273,6 +2508,10 @@ j:Button(
         local _ = 147180077
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2332,6 +2571,10 @@ j:Button(
         local _ = 100929604
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2391,6 +2634,10 @@ j:Button(
         local _ = 119916949
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2450,6 +2697,10 @@ j:Button(
         local _ = 72082328
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2509,6 +2760,10 @@ j:Button(
         local _ = 63043890
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2568,6 +2823,10 @@ j:Button(
         local _ = 259423244
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2627,6 +2886,10 @@ j:Button(
         local _ = 1016143686
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2686,6 +2949,10 @@ j:Button(
         local _ = 334663683
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2745,6 +3012,10 @@ j:Button(
         local _ = 215751161
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 j:Button(
@@ -2804,6 +3075,10 @@ j:Button(
         local _ = 98346834
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 )
 t:Button(
@@ -2863,6 +3138,10 @@ t:Button(
         local _ = 628771505
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 t:Button(
@@ -2922,6 +3201,10 @@ t:Button(
         local _ = 1360068971
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 t:Button(
@@ -2981,6 +3264,10 @@ t:Button(
         local _ = 2588166615
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.Character:WaitForChild("Head")
+k(game.Players.LocalPlayer.Character, _)
+end
+end)
     end
 ) 
 d:Button(
