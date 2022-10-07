@@ -2,6 +2,7 @@ local _ = loadstring(game:HttpGet("https://raw.githubusercontent.com/AustraIia/v
 local b = _:New({Name = "Vamp", FolderToSave = "SolarisLibStuff"})
 local _ = b:Tab("Welcome")
 local a = _:Section("Version 1.1")
+local p = _:Section("Cool")
 local _ = b:Tab("Valkyrie")
 local h = _:Section("Valkyrie")
 local _ = b:Tab("Fiery Horns")
@@ -63,19 +64,19 @@ local real = {
     }
     local oldface = game.Players.LocalPlayer.Character.Head.face.Texture
     
-j:Button(
+p:Button(
     "Enable Perma-Limited",
     function()
         getgenv().enabled = true
     end
 )
-j:Button(
+p:Button(
     "Disable Perma-Limited",
     function()
         getgenv().enabled = false
     end
 )
-j:Button(
+p:Button(
     "Remove Limiteds",
     function()
         for i = 1,30 do
@@ -90,7 +91,7 @@ j:Button(
     end
 end
 )
-h:Button(h:Button(
+h:Button(
     "Blackvalk",
     function()
         function l(a, _)
