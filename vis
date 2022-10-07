@@ -870,12 +870,14 @@ x:Button(
         local _ = 439945661
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+if getgenv().enabled then
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
 end
 end)
     end
-) 
+)
 x:Button(
     "Black Iron King of the Night",
     function()
