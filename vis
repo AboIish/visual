@@ -1,7 +1,5 @@
 local _ = loadstring(game:HttpGet("https://raw.githubusercontent.com/AustraIia/visual/main/gui"))()
 local b = _:New({Name = "Vamp", FolderToSave = "SolarisLibStuff"})
-local _ = b:Tab("Welcome")
-local z = _:Section("Version 2.0")
 local _ = b:Tab("Features")
 local p = _:Section("Cool")
 local _ = b:Tab("Valkyrie")
@@ -66,13 +64,7 @@ local real = {
     "KingOfTheNight_Gray"
     }
     local oldface = game.Players.LocalPlayer.Character.Head.face.Texture
-z:Button(
-    "Credits",
-    function()
-        local _ = game:GetService("StarterGui")
-        _:SetCore("SendNotification", {Title = "Credits", Text = "Dev: X, Inspiration Ideas: Jrock", Duration = 15})
-    end
-)  
+
 p:Button(
     "Enable Perma-Limited",
     function()
