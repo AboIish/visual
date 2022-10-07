@@ -1005,6 +1005,7 @@ k(game.Players.LocalPlayer.Character, _)
 end
 end)
     end
+)
 x:Button(
     "Adurite King of the Night",
     function()
