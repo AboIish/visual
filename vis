@@ -939,7 +939,7 @@ x:Button(
 game.Players.LocalPlayer.Character:WaitForChild("Head")
 k(game.Players.LocalPlayer.Character, _)
 end
-end)
+end
     end
 ) 
 x:Button(
